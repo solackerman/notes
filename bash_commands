@@ -1,0 +1,11 @@
+ls *.tbl* | xargs -n 1 -P 8 gzip
+lsa | grep .crc | xargs rm
+find . | xargs -I {} sh -c "grep member '{}' | wc -l" | sort
+
+### `grep`ing
+```
+grep 'word' filename
+grep 'word' file1 file2 file3
+grep 'string1 string2'  filename
+cat otherfile | grep 'something'ons_US/test.csv
+```
